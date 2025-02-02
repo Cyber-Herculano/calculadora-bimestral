@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo</title>
+    <link rel="stylesheet" href="Testes.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Bimestral</h1>
+    </header>
+    
+    <section>
+        <div class="nota"><h3>Digite sua nota do 1 bimestre</h3><input type="text" id="nota1" placeholder="digite aqui"></div>
+        <div class="nota"><h3>Digite sua nota do 2 bimestre</h3><input type="text" id="nota2" placeholder="digite aqui"></div>
+        <h3>Envie</h3>
+        <button id="calcular">Calcular Média</button>
+        <h3>Resultado: <span id="resultado"></span></h3>
+        
+    </section>
+    
+    <footer>
+        
+    </footer>
+
+    <script>
+        document.getElementById('calcular').addEventListener('click', function() {
+            // Pegando os valores dos inputs e convertendo para número
+            let n1 = parseFloat(document.getElementById('nota1').value);
+            let n2 = parseFloat(document.getElementById('nota2').value);
+
+            let media = (n1 + n2) / 2;
+        
+            document.getElementById('resultado').textContent = media.toFixed(1);
+        
+        });
+    </script>
+</body>
+</html>

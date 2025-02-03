@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "Testes.js",
   "scripts": {
+    "build": "npm install",
+    "start": "node Testes.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

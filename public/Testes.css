@@ -8,3 +8,14 @@ header h1{
     text-align: center;
 }
 
+#nota1 {
+    border-color: #636568;  /* Borda azul */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Sombra azul */
+    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+#nota2 {
+    border-color: #636568;  /* Borda azul */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Sombra azul */
+    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
